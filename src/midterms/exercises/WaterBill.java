@@ -2,7 +2,7 @@ package midterms.exercises;
 
 import java.util.Scanner;
 
-public class MidtermExercise7 {
+public class WaterBill {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String classicationConsumer = "";
@@ -14,7 +14,7 @@ public class MidtermExercise7 {
         int minCMCommercial = 30;
         double minBillCommercial = 600.00;
         float rateCommercial = 50.00F;
-        char cType = 'x'; //initialized cType
+        char cType; //initialized cType
         String consumer = "";
         System.out.print("Enter the consumer's name: ");
         consumer = keyboard.nextLine();

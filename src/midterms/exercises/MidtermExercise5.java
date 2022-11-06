@@ -1,11 +1,11 @@
-package something.tutorials;
+package midterms.exercises;
 
 import java.util.Scanner;
 
-public class GradeAverage1 {
+public class MidtermExercise5 {
     public static void main(String[] args) {
-        int [] grades = new int[10];
         int i;
+        int [] grades = new int[10];
         int [] units = new int[10];
         int totalGrades=0, totalUnits=0, average;
         Scanner keyboard = new Scanner(System.in);

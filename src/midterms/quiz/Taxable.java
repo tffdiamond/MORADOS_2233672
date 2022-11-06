@@ -1,7 +1,7 @@
 package midterms.quiz;
 
 import java.util.Scanner;
-
+//prof quiz, program I wrote a paper
 public class Taxable {
     public static void main(String[] args) {
         double taxableIncome = 0;
@@ -30,6 +30,10 @@ public class Taxable {
         if (a < 250000){
             double computed = 0;
             System.out.println("Tax due "+computed);
+        }
+        else if (a >= 250000 || a <= 400000){
+            double computed = 10;
+            System.out.println("Tax due"+computed);
         }
         return a;
     }

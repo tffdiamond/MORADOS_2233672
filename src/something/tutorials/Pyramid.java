@@ -2,7 +2,7 @@ package something.tutorials;
 
 import java.util.Scanner;
 
-public class MethodOutsideClass {
+public class Pyramid {
     public static void main(String[] args) {
         System.out.print("How many stars? ");
         Scanner kyb = new Scanner(System.in);
