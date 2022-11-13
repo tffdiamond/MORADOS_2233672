@@ -1,7 +1,7 @@
 /**
- Name: ______________________________
- Class Code & Schedule: ________________
- Date: ______________________________
+ Name: Morados, Lou Diamond, T
+ Class Code & Schedule: 9315 - (1:00 - 2:30 pm)
+ Date: November 7, 2022,
 
  Program that reads data from a datafile (textfile).
 

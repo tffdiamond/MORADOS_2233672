@@ -1,7 +1,7 @@
 /**
- Name:  ____________________
- Class Code & Schedule: ----------------
- Date: _______________________
+ Name:  Morados, Lou Diamond T.
+ Class Code & Schedule: 9315 - (1:00 - 2:30 pm)
+ Date: November 7, 2022
 
  *Program for determining if an integer is a prime number or not
  *An integer is a prime number if it is greater than 1

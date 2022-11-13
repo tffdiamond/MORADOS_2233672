@@ -1,7 +1,7 @@
 /**
- * Name: __________________________________
- * Class Code and Schedule:________________
- * Date: __________________________________
+ * Name: Morados, Lou Diamond T.
+ * Class Code and Schedule: 9315 - (1:00 - 2:30 pm)
+ * Date: November 7, 2022
  *
  *Problem:
  *Write a program that may be used for checking if a

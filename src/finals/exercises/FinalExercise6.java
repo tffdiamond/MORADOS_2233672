@@ -1,14 +1,17 @@
-package midterms.exercises;
+package finals.exercises;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AlingNenaStoreM1 {
+public class FinalExercise6 {
     public static void main(String[] args) {
+        productName();
+        calculationOfProduct();
+        System.exit(0);
+    }
+    public static void productName(){
         Scanner keyboard = new Scanner(System.in);
-        String pName = "";
-        double uPrice, totalCost, discount, discountedCost, amountTendered, change;
-        int qty, dRate;
+        String pName;
         ArrayList<String> listOfProduct = new ArrayList<>();
         listOfProduct.add("egg");
         listOfProduct.add("sugar");
@@ -22,6 +25,11 @@ public class AlingNenaStoreM1 {
                 System.out.println("We do not sell this product");
             }
         }while (!listOfProduct.contains(pName));
+    }
+    public static void calculationOfProduct(){
+        Scanner keyboard = new Scanner(System.in);
+        double uPrice, totalCost, discount, discountedCost, amountTendered, change;
+        int qty, dRate;
         do {
             System.out.print("Quantity: ");
             qty = Integer.parseInt(keyboard.nextLine());
@@ -60,6 +68,5 @@ public class AlingNenaStoreM1 {
         System.out.printf("%-25s%12.2f%n", "Total Discount: ", discount);
         System.out.printf("%-25s%12.2f%n", "Amount to be Paid: ", discountedCost);
         System.out.printf("%-25s%12.2f%n", "change: ", change);
-        System.exit(0);
     }
 }

@@ -1,8 +1,8 @@
 
 /**
- *Name: ______________________
- *Class Code and Schedule:___________
- *Date: _______________
+ *Name: Morados, Lou Diamond T.
+ *Class Code and Schedule: 9315 - (1:00 - 2:30 pm)
+ *Date: November 7, 2022
  *
  *
  *Problem:

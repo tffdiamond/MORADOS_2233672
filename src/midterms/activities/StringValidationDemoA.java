@@ -1,7 +1,7 @@
 /**
- Name: ___________________________________
- Class Code & Schedule: ___________________
- Date: ____________________________________
+ Name: Morados, Lou Diamond T.
+ Class Code & Schedule: 9315 - (1:00 - 2:30 pm)
+ Date: November 7, 2022
  *
  *Write a program that will let the computer asks the
  * user to enter a string that is a name of a product

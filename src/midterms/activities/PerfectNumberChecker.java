@@ -1,9 +1,9 @@
 
 
 /**
- Name:  ____________________
- Class Code & Schedule: ----------------
- Date: _______________________
+ Name:  Morados, Lou Diamond T
+ Class Code & Schedule: 9315 - (1:00 - 2:30 pm)
+ Date: November 7, 2022
 
  If the sum of the factors of the integer n, that are less than n,
  is equal to n, n is a perfect number.

@@ -1,7 +1,7 @@
 /**
- Name: ________________________________
- Class Code & Schedule: __________________
- Date: ___________________
+ Name: Morados, Lou Diamond T.
+ Class Code & Schedule: 9315 - (1:00 - 2:30 pm)
+ Date: November 7, 2022
 
  Write a program that prints strings
  in a datafile(textfile).When the program

@@ -15,7 +15,7 @@ public class Button implements ActionListener {
         frame = new JFrame();
         Font myFont1 = new Font("Arial", Font.BOLD, 12);
 
-        button = new JButton("Click me nigga");
+        button = new JButton("Click me");
         button.addActionListener(this);
         button.setFont(myFont1);
         label = new JLabel("Number of Clicks: 0");
