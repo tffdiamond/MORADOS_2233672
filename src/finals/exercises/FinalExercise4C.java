@@ -12,7 +12,7 @@ public class FinalExercise4C {
         for (int i=0; i<n-1; i++){
             int min_index = i;
             for (int j=i+1; j<n; j++)
-                if (arr1[j] < arr1[min_index])
+                if (arr1[j] < arr1[min_index])//{2,1}
                     min_index = j;
 
             int temp = arr1[min_index];
@@ -23,7 +23,7 @@ public class FinalExercise4C {
         for (int i=0; i<m-1; i++){
             int min_index = i;
             for (int j=i+1; j<m; j++)
-                if (arr2[j] > arr2[min_index])
+                if (arr2[j] > arr2[min_index])//{1,2}
                     min_index = j;
 
             int temp = arr2[min_index];

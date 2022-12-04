@@ -1,16 +1,25 @@
 package midterms.exam;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 
-public class LeapYearCalenderChecker {
+public class LeapYearCalendarChecker {
     public static void main(String[] args) {
         int year;
+        char entry = 'x';
         System.out.println("This application will create a typical calendar for a specified year");
-        year = readYear();
-        isLeapYear(year);
-        char entry = repeatProcess();
+        isLeapYear(readYear());
+        do {
+            entry = repeatProcess();
+            switch (entry) {
+                case 'y':
+                    isLeapYear(readYear());
+                    break;
+                case 'n':
+                    System.out.println("Thank you for using the program");
+                    break;
+            }
+        }while (entry == 'y');
 
     }
     static int readYear() {
@@ -34,16 +43,14 @@ public class LeapYearCalenderChecker {
     }
     static char repeatProcess(){
         Scanner kyb = new Scanner(System.in);
-        String entry;
+        char entry;
         do {
             System.out.println("Do you want to repeat the process? (y=yes & n=no)");
-            entry = kyb.nextLine();
-            if (!Objects.equals(entry, "y")){
-                System.out.println("(y=yes & n=no)");
-            }else if (!Objects.equals(entry, "n")){
-                System.out.println("(y=yes & n=no)");
+            entry = kyb.nextLine().charAt(0);
+            if (entry != 'y' && entry != 'n'){
+                System.out.println("(yes or no) only");
             }
-        } while (!Objects.equals(entry, "y") && !Objects.equals(entry, "n"));
-        return entry.charAt(0);
+        } while (entry != 'y' && entry != 'n');
+        return entry;
     }
 }

@@ -18,7 +18,6 @@ public class AppendToFileDemo {
         run();
         System.exit(0);
     }
-
     public static void run(){
         BufferedReader keyboard =new BufferedReader(new InputStreamReader(System.in));
         String lineOfText="";
@@ -41,7 +40,7 @@ public class AppendToFileDemo {
             System.out.println("The lines of text you entered were appended in outputfile.txt.");
 
         } catch (Exception e1) {
-            System.out.println("File Opening Error" + e1.toString());
+            System.out.println("File Opening Error" + e1);
             e1.printStackTrace();
         }
     }// end of run method

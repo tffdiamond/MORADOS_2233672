@@ -9,7 +9,7 @@ public class Calendar {
         System.out.println("This application will create a typical calendar for a specified year");
         year = readYear();
         value = isLeapYear(year);
-        calendar(startingDay(), value, year);
+        calendar(startingDay(year), value, year);
     }
     static int readYear() {
         Scanner kyb = new Scanner(System.in);
@@ -34,11 +34,12 @@ public class Calendar {
         }
         return value;
     }
-    static int startingDay(){
+    static int startingDay(int year){
         Scanner kyb = new Scanner(System.in);
         int dayNumber;
         do {
-            System.out.println("Enter the day for January 1: Sun=1, Mon=2, Tue=3, Wed=4, Thu=5, Fri=6, Sat=7 ");
+            System.out.println("Enter the day for January 1 "+year+": Sun=1, Mon=2, Tue=3, Wed=4, Thu=5, Fri=6, " +
+                    "Sat=7 ");
             dayNumber = Integer.parseInt(kyb.nextLine());
             if (dayNumber <= 0){
                 System.out.println("Day cannot be less than or equal to zero");
@@ -53,15 +54,17 @@ public class Calendar {
         int[] numbers = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         int k = 0;
         if (value) {
-
             for (int i = 0; i < months.length; i++) { //prints the months' ex. january
                 System.out.println(months[i]);
                 for (int j = 0; j < day.length; j++) {//prints the day ex. sun
                     System.out.print(day[j] + "\t");
                 }
                 System.out.println();
-                int d = day(i, 1, year);
-                for (int m=0; m<d; m++)
+                // starting day
+                int d = day(1, year);
+
+                // print the calendar
+                for (int m = 0; m < d; m++)
                     System.out.print("\t");
                 for (int l = 1; l <= numbers[k]; l++) {
                     System.out.print(l + "\t");
@@ -74,7 +77,7 @@ public class Calendar {
                 System.out.println();
             }
         }
-        else {
+        else{
             numbers[1] = 28;
             for (int i = 0; i < months.length; i++) { //prints the months' ex. january
                 System.out.println(months[i]);
@@ -82,8 +85,11 @@ public class Calendar {
                     System.out.print(day[j] + "\t");
                 }
                 System.out.println();
-                int d = day(i, 1, year);
-                for (int m=0; m<d; m++)
+                // starting day
+                int d = day(1, year);
+
+                // print the calendar
+                for (int m = 0; m < d; m++)
                     System.out.print("\t");
                 for (int l = 1; l <= numbers[k]; l++) {
                     System.out.print(l + "\t");
@@ -97,10 +103,10 @@ public class Calendar {
             }
         }
     }
-    static int day (int month, int day, int year){
+    static int day (int month, int year){
         int y = year - (14 - month) / 12;
         int x = y + y/4 - y/100 + y/400;
         int m = month + 12 * ((14 - month) / 12) - 2;
-        return (day + x + (31*m)/12) % 7;
+        return (1 + x + (31*m)/12) % 7;
     }
 }

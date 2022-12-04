@@ -1,28 +1,28 @@
 package finals.exercises;
 
 import java.util.Arrays;
-import java.util.Random;
 import java.util.Scanner;
 
 public class FinalExercise4B {
-    void bubbleSorting(int[] arr1, int[] arr2){
+    void bubbleSorting(int[] arr1, int[] arr2) {
         int n = arr1.length;
         int m = arr2.length;
-        for (int i=0; i<n; i++){
-            for (int j=0; j<n-i-1; j++){
-                if (arr1[j] > arr1[j+1]){
-                    int temp = arr1[j+1];
-                    arr1[j+1] = arr1[j];
-                    arr1[j] = temp;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                if (arr1[i] > arr1[j]) {
+                    int temp = arr1[j];
+                    arr1[j] = arr1[i];
+                    arr1[i] = temp;
                 }
             }
         }
-        for (int i=0; i<m; i++){
-            for (int j=0; j<m-i-1; j++){
-                if (arr2[j] < arr2[j+1]){
-                    int temp = arr2[j+1];
-                    arr2[j+1] = arr2[j];
-                    arr2[j] = temp;
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j < n; j++) {
+                if (arr2[i] > arr2[j]) {
+                    int temp = arr2[j];
+                    arr2[j] = arr2[i];
+                    arr2[i] = temp;
                 }
             }
         }
